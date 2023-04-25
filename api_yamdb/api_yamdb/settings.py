@@ -1,10 +1,9 @@
 import sys
-sys.path.append('api_yamdb/api_yamdb/settings.py')
-
 import os
 from pathlib import Path
 from datetime import timedelta
 
+sys.path.append('api_yamdb/api_yamdb/settings.py')
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY', 'your_default_secret_key')
