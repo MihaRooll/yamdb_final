@@ -1,10 +1,20 @@
+import sys
+sys.path.append('api_yamdb/api_yamdb/settings.py')
+
 import os
 from pathlib import Path
 from datetime import timedelta
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.environ.get('SECRET_KEY', 'default_secret_key')
+SECRET_KEY = os.getenv('SECRET_KEY', 'your_default_secret_key')
+DB_ENGINE = os.getenv('DB_ENGINE', 'django.db.backends.postgresql')
+DB_NAME = os.getenv('DB_NAME', 'your_default_database_name')
+POSTGRES_USER = os.getenv('POSTGRES_USER', 'your_default_postgres_user')
+POSTGRES_PASSWORD = os.getenv(
+    'POSTGRES_PASSWORD', 'your_default_postgres_password')
+DB_HOST = os.getenv('DB_HOST', 'db')
+DB_PORT = os.getenv('DB_PORT', '5432')
 
 DEBUG = False
 
