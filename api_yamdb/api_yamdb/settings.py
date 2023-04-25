@@ -1,10 +1,10 @@
-import sys
+# import sys
 import os
 from pathlib import Path
 from datetime import timedelta
 
-sys.path.append('api_yamdb/api_yamdb/settings.py')
-BASE_DIR = Path(__file__).resolve().parent.parent
+# sys.path.append('api_yamdb/api_yamdb/settings.py')
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = os.getenv('SECRET_KEY', 'your_default_secret_key')
 DB_ENGINE = os.getenv('DB_ENGINE', 'django.db.backends.postgresql')
