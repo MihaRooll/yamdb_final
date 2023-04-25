@@ -52,7 +52,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: miharoll/gates:v1.12
+          tags: miharoll/app:latest
 
       - name: Save image digest to state
         env:
