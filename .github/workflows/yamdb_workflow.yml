@@ -52,7 +52,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: miharoll/gates:v2.11
+          tags: miharoll/gates:latest
 
 
   deploy:
