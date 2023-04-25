@@ -1,6 +1,6 @@
 # import sys
 import os
-from pathlib import Path
+# from pathlib import Path
 from datetime import timedelta
 
 # sys.path.append('api_yamdb/api_yamdb/settings.py')
