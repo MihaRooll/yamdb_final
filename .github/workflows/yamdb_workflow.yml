@@ -50,6 +50,8 @@ jobs:
         id: push_to_registry
         uses: docker/build-push-action@v2
         with:
+          context: .
+          file: path/to/Dockerfile
           push: true
           tags: miharoll/gates:v2.11
 
