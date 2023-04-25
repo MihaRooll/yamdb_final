@@ -34,7 +34,7 @@ jobs:
   build_and_push_to_docker_hub:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-v2.11
-    needs: tests
+    needs: tests_and_linting
     steps:
       - name: Check out the repo
         # Проверка доступности репозитория Docker Hub для workflow
