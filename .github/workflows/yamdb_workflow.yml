@@ -31,7 +31,6 @@ jobs:
         run: |
           pytest
 
-
 build_and_push_to_docker_hub:
   name: Push Docker
   runs-on: ubuntu-latest
@@ -51,7 +50,6 @@ build_and_push_to_docker_hub:
         context: .
         push: true
         tags: miharoll/gates:v1.12
-
 
   deploy:
     needs: build_and_push_to_docker_hub
