@@ -28,10 +28,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'django_filters',
-    'api.apps.ApiConfig',
     'reviews.apps.ReviewsConfig',
-    # 'templates',
-    # 'static',
+    'api.apps.ApiConfig',
     'users.apps.UsersConfig',
 ]
 
